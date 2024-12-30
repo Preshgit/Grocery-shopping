@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocify - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white md:mx-10 mx-auto">
+    <nav class="bg-gray-900 p-4 relative">
+      <div class="container flex justify-between">
+        <!-- Mobile Menu Container -->
+        <div class="flex justify-between items-center">
+          <img
+            src="images/logo.png"
+            alt="logo"
+            class="w-32 md:w-40 cursor-pointer"
+          />
+        </div>
+        <!-- Navigation Links (hidden by default on mobile) -->
+        <div
+          class="hidden md:flex flex-col md:flex-row md:items-center md:justify-between mt-4 md:mt-0"
+        >
+          <div
+            class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <a href="#" class="hover:text-yellow-400">Home</a>
+            <a href="about.html" class="hover:text-yellow-400">About</a>
+            <a href="features.html" class="hover:text-yellow-400">Features</a>
+            <a href="contact.html" class="text-yellow-400">Contact</a>
+          </div>
+        </div>
+        <div class="hidden md:flex">
+          <a href="#" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg"
+            >Order Now</a
+          >
+        </div>
+        <!-- Hamburger Button (visible only on mobile) -->
+        <div
+          class="hidden md:hidden flex-col md:flex-row md:items-center md:justify-between mt-4 md:mt-0 absolute z-50 bg-gray-900 w-full p-5 top-11 left-0"
+          id="mobileMenu"
+        >
+          <div
+            class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <a href="index.html" class="hover:text-yellow-400">Home</a>
+            <a href="about.html" class="hover:text-yellow-400">About</a>
+            <a href="features.html" class="hover:text-yellow-400">Features</a>
+            <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+          </div>
+        </div>
+        <div class="hidden md:hidden">
+          <a
+            href="#"
+            class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg hover:animate-bounce"
+            >Order Now</a
+          >
+        </div>
+        <button
+          class="md:hidden transition-transform duration-300"
+          id="menuBtn"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <!-- Hamburger icon -->
+            <path
+              class="hamburger"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+            <!-- X icon (hidden by default) -->
+            <path
+              class="x-mark hidden"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+      <h1 class="text-4xl font-bold mb-12 text-center">Contact Us</h1>
+
+      <div class="max-w-3xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+            <div class="space-y-4">
+              <p class="flex items-center">
+                <span class="text-yellow-400 mr-2">📧</span>
+                support@grocify.com
+              </p>
+              <p class="flex items-center">
+                <span class="text-yellow-400 mr-2">📱</span>
+                1-800-GROCIFY
+              </p>
+              <p class="flex items-center">
+                <span class="text-yellow-400 mr-2">📍</span>
+                123 Grocery Street, Food City, FC 12345
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-4">Working Hours</h3>
+            <div class="space-y-2">
+              <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+              <p>Saturday: 9:00 AM - 8:00 PM</p>
+              <p>Sunday: 10:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="bg-gray-800 p-8 rounded-lg">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="block mb-2">Name</label>
+              <input
+                type="text"
+                class="w-full px-4 py-2 rounded bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+            <div>
+              <label class="block mb-2">Email</label>
+              <input
+                type="email"
+                class="w-full px-4 py-2 rounded bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+          </div>
+          <div class="mb-6">
+            <label class="block mb-2">Subject</label>
+            <input
+              type="text"
+              class="w-full px-4 py-2 rounded bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            />
+          </div>
+          <div class="mb-6">
+            <label class="block mb-2">Message</label>
+            <textarea
+              rows="4"
+              class="w-full px-4 py-2 rounded bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg hover:bg-yellow-500"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer
+      class="relative left-[50%] right-[50%] w-screen -translate-x-1/2 bg-gray-800 py-6 md:py-8"
+    >
+      <div class="container mx-auto px-4 text-center text-gray-400">
+        <p>&copy; 2024 Grocify. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Mobile Menu JavaScript -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const hamburger = menuBtn.querySelector(".hamburger");
+      const xMark = menuBtn.querySelector(".x-mark");
+
+      menuBtn.addEventListener("click", () => {
+        // Toggle menu visibility
+        mobileMenu.classList.toggle("hidden");
+
+        // Toggle between hamburger and X
+        hamburger.classList.toggle("hidden");
+        xMark.classList.toggle("hidden");
+
+        // Optional: Add rotation animation
+        menuBtn.classList.toggle("rotate-90");
+      });
+    </script>
+  </body>
+</html>

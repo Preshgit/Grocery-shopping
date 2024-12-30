@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocify - Features</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white md:mx-10 mx-auto">
+    <nav class="bg-gray-900 p-4 relative">
+      <div class="container flex justify-between">
+        <!-- Mobile Menu Container -->
+        <div class="flex justify-between items-center">
+          <img
+            src="images/logo.png"
+            alt="logo"
+            class="w-32 md:w-40 cursor-pointer"
+          />
+        </div>
+        <!-- Navigation Links (hidden by default on mobile) -->
+        <div
+          class="hidden md:flex flex-col md:flex-row md:items-center md:justify-between mt-4 md:mt-0"
+        >
+          <div
+            class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <a href="#" class="hover:text-yellow-400">Home</a>
+            <a href="about.html" class="hover:text-yellow-400">About</a>
+            <a href="features.html" class="text-yellow-400">Features</a>
+            <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+          </div>
+        </div>
+        <div class="hidden md:flex">
+          <a href="#" class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg"
+            >Order Now</a
+          >
+        </div>
+        <!-- Hamburger Button (visible only on mobile) -->
+        <div
+          class="hidden md:hidden flex-col md:flex-row md:items-center md:justify-between mt-4 md:mt-0 absolute z-50 bg-gray-900 w-full p-5 top-11 left-0"
+          id="mobileMenu"
+        >
+          <div
+            class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <a href="index.html" class="hover:text-yellow-400">Home</a>
+            <a href="about.html" class="hover:text-yellow-400">About</a>
+            <a href="features.html" class="hover:text-yellow-400">Features</a>
+            <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+          </div>
+        </div>
+        <div class="hidden md:hidden">
+          <a
+            href="#"
+            class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg hover:animate-bounce"
+            >Order Now</a
+          >
+        </div>
+        <button
+          class="md:hidden transition-transform duration-300"
+          id="menuBtn"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <!-- Hamburger icon -->
+            <path
+              class="hamburger"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+            <!-- X icon (hidden by default) -->
+            <path
+              class="x-mark hidden"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+      <h1 class="text-4xl font-bold mb-12 text-center">Our Features</h1>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <div class="text-yellow-400 text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold mb-2">15-Minute Delivery</h3>
+          <p class="text-gray-300">
+            Get your groceries delivered to your doorstep in just 15 minutes or
+            less.
+          </p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <div class="text-yellow-400 text-4xl mb-4">🌟</div>
+          <h3 class="text-xl font-bold mb-2">Wide Product Range</h3>
+          <p class="text-gray-300">
+            Choose from thousands of fresh products, including organic produce
+            and local items.
+          </p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <div class="text-yellow-400 text-4xl mb-4">📱</div>
+          <h3 class="text-xl font-bold mb-2">Easy Mobile App</h3>
+          <p class="text-gray-300">
+            Order groceries with our user-friendly mobile app available for iOS
+            and Android.
+          </p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <div class="text-yellow-400 text-4xl mb-4">💳</div>
+          <h3 class="text-xl font-bold mb-2">Secure Payments</h3>
+          <p class="text-gray-300">
+            Multiple payment options with secure transaction processing.
+          </p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <div class="text-yellow-400 text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-2">Real-time Tracking</h3>
+          <p class="text-gray-300">
+            Track your order in real-time from store to your doorstep.
+          </p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <div class="text-yellow-400 text-4xl mb-4">🎁</div>
+          <h3 class="text-xl font-bold mb-2">Rewards Program</h3>
+          <p class="text-gray-300">
+            Earn points on every order and get exclusive discounts.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="relative left-[50%] right-[50%] w-screen -translate-x-1/2 bg-gray-800 py-6 md:py-8"
+    >
+      <div class="container mx-auto px-4 text-center text-gray-400">
+        <p>&copy; 2024 Grocify. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const hamburger = menuBtn.querySelector(".hamburger");
+      const xMark = menuBtn.querySelector(".x-mark");
+
+      menuBtn.addEventListener("click", () => {
+        // Toggle menu visibility
+        mobileMenu.classList.toggle("hidden");
+
+        // Toggle between hamburger and X
+        hamburger.classList.toggle("hidden");
+        xMark.classList.toggle("hidden");
+
+        // Optional: Add rotation animation
+        menuBtn.classList.toggle("rotate-90");
+      });
+    </script>
+  </body>
+</html>
